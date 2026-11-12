@@ -1,0 +1,19 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+android {
+    namespace 'com.syncbeat.app'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'com.syncbeat.app'
+        minSdk 26
+        targetSdk 28
+        versionCode 1
+        versionName '0.1'
+    }
+}
+dependencies {
+    implementation 'org.nanohttpd:nanohttpd:2.3.1'
+    implementation 'androidx.media3:media3-exoplayer:1.4.1'
+}
